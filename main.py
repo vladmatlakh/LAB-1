@@ -1,21 +1,21 @@
 number = int(input('WRITE NUMBER: '))
 float_number = 1.23
 text_str = 'Hello world'
-d = bool
-f = [1,2,3,4,5,6]
-g = (1,2,3,4,5,6)
+bool_variable = bool
+number_list = [1,2,3,4,5,6]
+tuple_list = (1,2,3,4,5,6)
 text = "hello world"
-h = set(text)
+set_list = set(text)
+vocabulary = {'1': 'computer', '2': 'programming'}
 
-k = {'1': 'computer', '2': 'programming'}
+if number <= 5:
+    bool_variable = True
+    print(bool_variable)
+elif number >5:
+    bool_variable = False
+    print(bool_variable)
 
-if a < 5:
-    d = True
-    print(d)
-elif a >5:
-    d = False
-    print(d)
-
-print("NUMBERS: ", a,"/", b,"/", f[2],"/", g[0])
-print("TEXT: ", c,"/", list(h)[0], "/", k['1'])
-print("CLASSES: ", type(a), type(b), type(c), type(d), type(f), type(g), type(h), type(k))
+print("NUMBERS: ", number,"/ ", float_number,"/ ", number_list[2],"/ ", tuple_list[0])
+print("TEXT: ", text_str,"/ ", list(set_list)[0], "/ ", vocabulary['1'])
+print("CLASSES: ", type(number), type(float_number), type(text_str), type(bool_variable),
+      type(set_list), type(tuple_list), type(number_list), type(vocabulary))
